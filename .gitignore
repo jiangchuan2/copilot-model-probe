@@ -1,0 +1,18 @@
+node_modules/
+
+# 绝不提交任何凭据 / 令牌 / 本地探测结果
+.env
+.env.*
+*.token
+*.secret
+.copilot-probe/
+probe-result.json
+probe-result.md
+coverage/
+*.log
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

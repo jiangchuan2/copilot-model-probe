@@ -1,0 +1,45 @@
+{
+  "name": "copilot-model-probe",
+  "version": "0.1.0",
+  "description": "Probe which GitHub Copilot models your account can actually call — the /models catalog lies, this tests real requests.",
+  "type": "module",
+  "bin": {
+    "copilot-model-probe": "./bin/cli.mjs"
+  },
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./auth": "./src/auth.mjs",
+    "./probe": "./src/probe.mjs",
+    "./report": "./src/report.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cli.mjs",
+    "test": "node test/run-all.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "github-copilot",
+    "copilot",
+    "model-availability",
+    "probe",
+    "cli",
+    "llm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/copilot-model-probe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/copilot-model-probe/issues"
+  }
+}
