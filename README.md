@@ -1,4 +1,7 @@
 # copilot-model-probe
+[![test](https://github.com/jiangchuan2/copilot-model-probe/actions/workflows/test.yml/badge.svg)](https://github.com/jiangchuan2/copilot-model-probe/actions/workflows/test.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 
 Find out which GitHub Copilot models your account can **actually** call — by sending real requests instead of trusting the catalog.
 
@@ -140,6 +143,12 @@ If what you want is more models rather than a clearer view of the ones you have,
 - Probing spends a sliver of quota: each request asks for 5 output tokens. A full sweep of ~30 models is negligible against a monthly allowance, but it is not literally free.
 - `policy: enabled` is a hint, not a promise. That is the entire reason this tool exists.
 - GitHub can change the model ids, the header set, or the endpoint at any time; if a run suddenly reports everything `error`, check those first.
+
+## Contributing
+
+Issues and pull requests are welcome. If a model reports `error` instead of `usable` or `blocked`, the header set or the endpoint likely moved upstream — include the output of `node bin/cli.mjs --json` with your report.
+
+Please do not paste access tokens, refresh tokens, or the contents of your credential cache into an issue. The `--json` output contains no secrets by design.
 
 ## License
 

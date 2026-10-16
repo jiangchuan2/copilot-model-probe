@@ -1,0 +1,10 @@
+# Normalize line endings so the repository is consistent across platforms.
+* text=auto eol=lf
+
+# Windows-only files keep CRLF if any are ever added.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary
+*.png binary
+*.jpg binary
