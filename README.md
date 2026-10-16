@@ -128,6 +128,12 @@ node test/run-all.mjs
 
 Ten cases cover status classification, catalog filtering, transport failures, concurrency bounds, and all three renderers. `fetch` is stubbed, so the suite makes no network calls.
 
+## Relationship to other model-routing tools
+
+This tool answers one narrow question: **what can my Copilot account call, right now**. It does not proxy, aggregate, or route anything, and it does not unlock models your plan excludes — the refusal comes from the service, keyed to your account.
+
+If what you want is more models rather than a clearer view of the ones you have, look at aggregators instead (OpenRouter, or any OpenAI-compatible gateway). Those are a different category of tool: this one is a diagnostic.
+
 ## Notes and limits
 
 - **This does not unlock anything.** The refusal comes from the service, keyed to your account's plan. No client-side change can bypass it — the tool tells you what you have, not what you wish you had.
