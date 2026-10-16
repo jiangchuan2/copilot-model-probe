@@ -37,9 +37,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/copilot-model-probe.git"
+    "url": "https://github.com/jiangchuan2/copilot-model-probe.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/copilot-model-probe/issues"
+    "url": "https://github.com/jiangchuan2/copilot-model-probe/issues"
   }
 }

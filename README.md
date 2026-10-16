@@ -17,7 +17,7 @@ That is what this tool does.
 ## Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/copilot-model-probe.git
+git clone https://github.com/jiangchuan2/copilot-model-probe.git
 cd copilot-model-probe
 node bin/cli.mjs --help
 ```
